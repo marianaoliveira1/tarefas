@@ -20,5 +20,14 @@ document.querySelector('#push').onclick = function(){
                 this.parentNode.remove();
             }
         }
+
+        var tarefa = document.querySelectorAll(".tarefas");
+        for(var i =0; i < tarefa.length; i++){
+            tarefa[i].onclick = function(){
+                this.classLsit.toggle('completed');
+            }
+        }
+
+        document.querySelector("#novatarefa  input").value = "";
     }
 }
